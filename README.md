@@ -1,2 +1,2 @@
-## simple 分支
-### 没有使用husky自动校验commit提交
+## ssrapp 分支
+### vite版本降为2.9.0，vitejs/plugin-vue降为2.3.0
