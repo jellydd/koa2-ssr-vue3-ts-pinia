@@ -1,5 +1,5 @@
 <template>
-  <img alt="Vue logo" src="./../assets/logo.png" />
+  <img alt="Vue logo" src="./../assets/vue.svg" />
   <UsePinia />
   <br />
   <router-link to="/login">点击跳转至login</router-link>
