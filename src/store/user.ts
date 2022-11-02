@@ -1,15 +1,18 @@
 import { defineStore } from 'pinia';
 
-export const useUserStore = defineStore({
-  id: 'user', // id必填，且需要唯一
+export default defineStore('user', {
   state: () => {
     return {
-      name: '张三'
+      name: '张三',
+      age: 20
     };
   },
   actions: {
     updateName(name: string) {
       this.name = name;
+    },
+    updateAge(age: number) {
+      this.age = age;
     }
   }
 });

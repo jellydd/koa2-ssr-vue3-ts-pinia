@@ -22,21 +22,5 @@ export default defineConfig({
     Components({
       resolvers: [ElementPlusResolver()]
     })
-  ],
-
-  server: {
-    port: 8080, //启动端口
-    hmr: {
-      host: '127.0.0.1',
-      port: 8080
-    },
-    // 设置 https 代理
-    proxy: {
-      '/api': {
-        target: '1111111',
-        changeOrigin: true,
-        rewrite: (path: string) => path.replace(/^\/api/, '')
-      }
-    }
-  }
+  ]
 });
