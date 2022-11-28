@@ -1,19 +1,17 @@
 <template>
-  <h2>欢迎使用vite+vue3+ts+pinia+vue-router4</h2>
+  <div>
+    <p>这是父组件传值-12312---123</p>
+    <p> {{ props.data.name }}</p>
+  </div>
+
   <div>{{ userStore.name }}</div>
 </template>
 
-<script lang="ts">
-  import { defineComponent } from 'vue';
-  import { useUserStore } from '@/store/user';
+<script lang="ts" setup>
+import { useUserStore } from '@/store/user';
+const userStore = useUserStore();
 
-  export default defineComponent({
-    name: 'UsePinia',
-    setup() {
-      const userStore = useUserStore();
-      return {
-        userStore
-      };
-    }
-  });
+const props = defineProps(['data'])
+
+
 </script>
